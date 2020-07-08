@@ -2,4 +2,4 @@
 This is a very basic setup using GitHub Pages to start documenting some information publicly.
 
 ## WOW this is boring so far...
-Sure is, sorry not quite in the leauge https://www.boringcompany.com/
+Sure is, sorry not quite in the leauge [https://www.boringcompany.com/]
