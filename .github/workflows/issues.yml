@@ -9,11 +9,12 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  my_job:
-  - name: Dhruv Custom Github Action
-    # You may pin to the exact commit or the version.
-    # uses: dhruvdakoria/custom-github-action@6a41fdb0ef0a362f88645cb6eb69cdc6b6fe2621
-    uses: dhruvdakoria/custom-github-action@v1.0.0
-    with:
-      # number of the pokemon in the pokedex
-      pokemon_id: 2 # default is 1
+  my_first_job:
+    steps:
+      - name: Dhruv Custom Github Action
+        # You may pin to the exact commit or the version.
+        # uses: dhruvdakoria/custom-github-action@6a41fdb0ef0a362f88645cb6eb69cdc6b6fe2621
+        uses: dhruvdakoria/custom-github-action@v1.0.0
+        with:
+          # number of the pokemon in the pokedex
+          pokemon_id: 2 # default is 1
