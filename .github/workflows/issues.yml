@@ -13,10 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     name: We test it locally with act
     steps:
-      - name: Dhruv Custom Github Action
-        # You may pin to the exact commit or the version.
-        # uses: dhruvdakoria/custom-github-action@6a41fdb0ef0a362f88645cb6eb69cdc6b6fe2621
-        uses: dhruvdakoria/custom-github-action@v1.0.0
-        with:
-          # number of the pokemon in the pokedex
-          pokemon_id: 2 # default is 1
+    - name: REST API with curl
+      run: |
+        curl -X GET "https://gorest.co.in/public/v2/users"
