@@ -1,5 +1,5 @@
 # This is a basic workflow to help you get started with Actions
-name: CI
+name: BasicWorkflow
 
 # Controls when the workflow will run
 on:
@@ -9,15 +9,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  logLatestRelease:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: octokit/request-action@v2.x
-        id: get_latest_release
-        with:
-          route: GET /repos/{owner}/{repo}/releases/latest
-          owner: octokit
-          repo: request-action
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"
+- name: Dhruv Custom Github Action
+  # You may pin to the exact commit or the version.
+  # uses: dhruvdakoria/custom-github-action@6a41fdb0ef0a362f88645cb6eb69cdc6b6fe2621
+  uses: dhruvdakoria/custom-github-action@v1.0.0
+  with:
+    # number of the pokemon in the pokedex
+    pokemon_id: # default is 1
